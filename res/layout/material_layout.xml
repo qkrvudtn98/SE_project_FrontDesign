@@ -251,6 +251,26 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/기타"
+                        android:layout_marginBottom="3dp"/>
+
+                    <CheckBox
+                        android:layout_width="70dp"
+                        android:layout_height="25dp"
+                        android:id="@+id/checkBoxcolor11"
+                        android:text="기타"/>
+
+                </LinearLayout>
+
 
             </LinearLayout>
 

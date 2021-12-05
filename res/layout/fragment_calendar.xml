@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="35dp"
+            android:text="Calendar"
+            android:textAlignment="center"
+            android:fontFamily="@font/jua"
+            style="@style/calender"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/close_btn"/>
+
+    </LinearLayout>
+
+    //캘린더+날씨추가
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="5dp"
+        android:text="일정등록"
+        android:fontFamily="@font/jua"
+        android:backgroundTint="#B59073"
+        style="@style/search_btn"/>
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:text="날씨"
+        android:fontFamily="@font/jua"
+        android:backgroundTint="#B59073"
+        style="@style/search_btn"
+        android:id="@+id/weatherlink"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="100dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/hanger"/>
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/drawer"/>
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/calendar"/>
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/plusbutton"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#E5E5E5"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="35dp"
+            android:text="Drawer"
+            android:textAlignment="center"
+            android:fontFamily="@font/jua"
+            style="@style/calender"/>
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="90dp"
+            android:src="@drawable/close_btn"/>
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:fontFamily="@font/jua"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:textSize="24sp"-->
+<!--            android:text="drawer"-->
+<!--            android:textAppearance="@style/drawer"/>-->
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="550dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="1번 서랍"
+                    android:fontFamily="@font/jua"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"
+                    android:paddingTop="30dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="온도"
+                    android:textSize="15sp"
+                    android:background="@drawable/frame_11"
+                    android:id="@+id/drawer1_temp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="습도"
+                    android:textSize="15sp"
+                    android:background="@drawable/frame_11"
+                    android:id="@+id/drawer1_hum"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="2번 서랍"
+                    android:fontFamily="@font/jua"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:paddingTop="30dp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="온도"
+                    android:textSize="15sp"
+                    android:background="@drawable/frame_11"
+                    android:id="@+id/drawer2_temp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="습도"
+                    android:textSize="15sp"
+                    android:background="@drawable/frame_11"
+                    android:id="@+id/drawer2_hum"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="3번 서랍"
+                    android:fontFamily="@font/jua"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:paddingTop="30dp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="온도"
+                    android:textSize="15sp"
+                    android:id="@+id/drawer3_temp"
+                    android:background="@drawable/frame_11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="습도"
+                    android:textSize="15sp"
+                    android:id="@+id/drawer3_hum"
+                    android:background="@drawable/frame_11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="4번 서랍"
+                    android:fontFamily="@font/jua"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:paddingTop="30dp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="온도"
+                    android:textSize="15sp"
+                    android:id="@+id/drawer4_temp"
+                    android:background="@drawable/frame_11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="습도"
+                    android:textSize="15sp"
+                    android:id="@+id/drawer4_hum"
+                    android:background="@drawable/frame_11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="5번 서랍"
+                    android:fontFamily="@font/jua"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:paddingTop="30dp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="온도"
+                    android:textSize="15sp"
+                    android:id="@+id/drawer5_temp"
+                    android:background="@drawable/frame_11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="습도"
+                    android:textSize="15sp"
+                    android:id="@+id/drawer5_hum"
+                    android:background="@drawable/frame_11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rectangle"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="6번 서랍"
+                    android:fontFamily="@font/jua"
+                    android:textAlignment="center"
+                    android:textSize="22sp"
+                    android:paddingTop="30dp"
+                    android:layout_weight="2"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="온도"
+                    android:textSize="15sp"
+                    android:id="@+id/drawer6_temp"
+                    android:background="@drawable/frame_11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="습도"
+                    android:textSize="15sp"
+                    android:id="@+id/drawer6_hum"
+                    android:background="@drawable/frame_11"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/hanger"/>
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/drawer"/>
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/calendar"/>
+
+        <ImageButton
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:src="@drawable/plusbutton"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
